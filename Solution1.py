@@ -4,9 +4,7 @@ from flask import Flask, render_template
 from data import db_session
 from data.table1 import Table1
 
-
 app = Flask(__name__)
-
 
 
 @app.route("/")

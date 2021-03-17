@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index1():
-    db_sess = db_session.create_session()
-    table1 = db_sess.query(Table1)
-    return render_template("index.html", table1=table1)
+    # db_sess = db_session.create_session()
+    # table1 = db_sess.query(Table1)
+    return render_template("index.html", table1=[1, 2])
 
 
 def main():
